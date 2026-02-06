@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Assignment-1</title>
+    <script>
+      // Code One
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+
+  /*
+   Code One will not work because it tries to access the HTML element
+   before the page has fully loaded. The script is placed inside the head
+   section, so when JavaScript runs, the element with id "el" does not
+   exist yet in the DOM.
+
+   As a result, document.getElementById("el") returns null,
+   and the style cannot be applied.
+
+   Code Two works because it waits for the window to load completely.
+   Code Three works because it is placed after the element in the body,
+   so the element already exists when the script runs.
+*/
+
+</script>
+</body>
+</html>

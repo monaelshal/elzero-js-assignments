@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-4</title>
+</head>
+<body>
+
+<script>
+// Start Group 1
+console.group("Group 1");
+console.log("Message One");
+console.log("Message Two");
+
+// Start Child Group
+console.group("Child Group");
+console.log("Message One");
+console.log("Message Two");
+
+// Start Grand Child Group
+console.group("Grand Child Group");
+console.log("Message One");
+console.log("Message Two");
+console.groupEnd(); // End Grand Child Group
+
+console.groupEnd(); // End Child Group
+console.groupEnd(); // End Group 1
+
+// Start Group 2
+console.group("Group 2");
+console.log("Message One");
+console.log("Message Two");
+console.groupEnd(); // End Group 2
+</script>
+</body>
+</html>

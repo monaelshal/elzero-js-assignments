@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-6</title>
+</head>
+<body>
+
+<script>
+  // First Method: Prevent code execution by overriding console.log and document.write with empty functions so the original code stays in the file but does nothing.
+  console.log = function(){};
+  document.write = function(){};
+
+ //original code
+
+  console.log("Iam In Console");
+  document.write("Iam In Page");
+
+
+
+</script>
+</body>
+</html>
